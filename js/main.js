@@ -48,7 +48,7 @@ function sendContent(content) {
         type: "GET",
         url: "index.php",
         //参数"d"为避免返回缓存中的数据，保持数据是最新的
-        data: "action=sendContent&d=" + new Date() + "&content=" + content,
+        data: "action=SendContent&d=" + new Date() + "&content=" + content,
         success: function(data) {
             if (data == "1") {
                 //发送成功后重新获取聊天框的最新内容

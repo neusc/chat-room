@@ -9,7 +9,7 @@
    case 'Login':  
      login($name,$password);
      break;
-   case 'sendContent':
+   case 'SendContent':
      addSendContent($content);
      break;
    case 'ChatList':
