@@ -1,0 +1,27 @@
+body{
+	padding: 0;
+}
+#divLogin {
+	height: 200px;
+	width: 300px;
+	/*border:solid;
+	border-color: #000;*/
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+h3{
+	text-align: center;
+}
+.content{
+	margin-left: 16%;
+}
+.btnCenter{
+	margin: 20px;
+}
+.btnCenter input{
+	margin: 10px;
+}

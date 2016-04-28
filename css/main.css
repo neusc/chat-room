@@ -1,0 +1,40 @@
+#divMain {
+    height: 75%;
+    width: 45%;
+    border: solid;
+    border-color: #000;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.divLeft {
+    /*float: left;*/
+    display: inline-block;
+    width: 65%;
+    height: 70%;
+    margin: 5px;
+    border: solid;
+}
+#divContent{
+    overflow: auto;
+}
+
+.divRight {
+    /*float: right;*/
+    display: inline-block;
+    width: 30%;
+    height: 70%;
+    /*margin: 5px;*/
+    border: solid;
+}
+
+.divBot {
+    margin: 5px;
+    border: solid;
+    height: 25%;
+    border-color: #000;
+}
