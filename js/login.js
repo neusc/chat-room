@@ -36,11 +36,11 @@ function userLogin(name, password) {
                 window.location = "ChatMain.html";
             } else {
                 alert("请确认您输入的用户名和密码是否正确！");
-                $name.focus();
+                $("#name").focus();
                 return false;
             }
         },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
+        error: function (XMLHttpRequest, textStatus) {
             alert(XMLHttpRequest.status);
             alert(XMLHttpRequest.readyState);
             alert(textStatus);
