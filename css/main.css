@@ -19,7 +19,8 @@
     margin: 5px;
     border: solid;
 }
-#divContent{
+
+#divContent {
     overflow: auto;
 }
 

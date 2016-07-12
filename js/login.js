@@ -1,12 +1,12 @@
-$(function() {
-    $("#message").ajaxStart(function() {
+$(function () {
+    $("#message").ajaxStart(function () {
         $(this).show().html("正在发送登录请求...");
     });
-    $("#message").ajaxStop(function() {
+    $("#message").ajaxStop(function () {
         $(this).html("请求处理已完成").hide();
     });
 
-    $("#confirm").bind("click", function() {
+    $("#confirm").bind("click", function () {
         var $name = $("#name");
         var $password = $("#password");
         if ($name.val() != "" && $password.val() != "") {
@@ -31,7 +31,7 @@ function userLogin(name, password) {
         type: "GET",
         url: "index.php",
         data: "action=Login&d=" + new Date() + "&name=" + name + "&password=" + password,
-        success: function(data) {
+        success: function (data) {
             if (data == "1") {
                 window.location = "ChatMain.html";
             } else {
@@ -40,7 +40,7 @@ function userLogin(name, password) {
                 return false;
             }
         },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
             alert(XMLHttpRequest.status);
             alert(XMLHttpRequest.readyState);
             alert(textStatus);
